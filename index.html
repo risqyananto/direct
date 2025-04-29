@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirect ke Dramanesia</title>
+  <style>
+    body {
+      background-color: silver;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #000;
+    }
+
+    img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    a {
+      font-size: 1.5rem;
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p, a {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+  <script>
+    let countdown = 10;
+    function updateCountdown() {
+      const countdownEl = document.getElementById("countdown");
+      countdownEl.textContent = countdown;
+      if (countdown <= 0) {
+        window.location.href = "https://dramanesia.xyz";
+      } else {
+        countdown--;
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+    window.onload = updateCountdown;
+  </script>
+</head>
+<body>
+
+  <img src="https://dramanesia.xyz/wp-content/uploads/2025/03/dramanesia-reborn.png" alt="Logo Dramanesia">
+
+  <h1>Dramanesia</h1>
+  <p>Download dan Nonton Drama Subtitle Indonesia</p>
+
+  <p>Kamu akan diarahkan ke website Dramanesia yang baru dalam <strong>10 detik</strong>.</p>
+
+  <p><a href="https://dramanesia.xyz">Klik Dramanesia</a> untuk diarahkan ke domain terbaru dari Dramanesia</p>
+
+  <div class="footer">
+    <!-- Tambahkan link Telegram, dll di sini -->
+   Gabung Group Telegram, Discord untuk mendapatkan notifikasi atau pengumuman terbaru tentang website dan app<br /><h1><a href="https://t.me/DramanesiaReborn">Telegram Channel</a></h1> dan <h1><a href="https://discord.gg/CYV2aegnxb">Discord Server</a></h1>
+  </div>
+
+</body>
+</html>
